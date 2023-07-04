@@ -10,10 +10,7 @@ function Dashboard({ student,teacher }) {
             </p>
           </div>
           <div className="row">
-            <div className="col-12">
-              <p>Mock Api server used</p>
-            </div>
-          <div className="col">
+            <div className="col">
           
             <p className="btn btn-success"><i className="fa-regular fa-circle-user"></i> Students count : {student.length} </p>
           </div>
