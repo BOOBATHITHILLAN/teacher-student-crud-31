@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import Datacontext from "../context/Datacontext";
 
-function Createteacher({ teacher, addTeacher, edittea, setEdittea }) {
+function Createteacher() {
+
+  const{teacher,addTeacher,setEdittea}=useContext(Datacontext);
+
   function Editteacher(id, name, master, address) {
     setEdittea([{
       id: id,
@@ -33,7 +38,6 @@ function Createteacher({ teacher, addTeacher, edittea, setEdittea }) {
           <table className="table table-secondary table-striped">
             <thead>
               <tr>
-                <th>Id</th>
                 <th>Name</th>
                 <th>Profession</th>
                 <th>Address</th>
@@ -46,7 +50,6 @@ function Createteacher({ teacher, addTeacher, edittea, setEdittea }) {
                 teacher.map((te, index) => {
                   return (
                     <tr key={index}>
-                      <td>{te.id}</td>
                       <td>{te.name}</td>
                       <td>{te.master}</td>
                       <td>{te.address}</td>

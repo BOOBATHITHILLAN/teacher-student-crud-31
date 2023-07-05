@@ -1,4 +1,11 @@
-function Dashboard({ student,teacher }) {
+import { useContext } from "react";
+import Datacontext from "../context/Datacontext";
+
+
+function Dashboard() {
+
+  const{student}=useContext(Datacontext)
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -6,7 +13,7 @@ function Dashboard({ student,teacher }) {
           
           <div>
             <p className="font-weight-bolder">
-              Welcome to SB Admin School <sup>2</sup>
+              Welcome to Karan School 
             </p>
           </div>
           <div className="row">

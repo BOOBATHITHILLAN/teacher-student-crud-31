@@ -1,9 +1,13 @@
 import React from "react";
 import Navpagecollapse from "./Navpagecollapse";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import Datacontext from "../context/Datacontext";
 
 
-function Sidebar({ style, Changestyle}) {
+function Sidebar(){
+
+  const{style,Changestyle}= useContext(Datacontext)
 
 
 
@@ -20,7 +24,7 @@ function Sidebar({ style, Changestyle}) {
             <i className="fa-solid fa-house"></i>
           </div>
           <div className="sidebar-brand-text mx-3">
-            SB Admin School <sup>2</sup>
+            Karan School <sup>2</sup>
           </div>
         </a>
 

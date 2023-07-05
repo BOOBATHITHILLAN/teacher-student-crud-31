@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import Datacontext from "../context/Datacontext";
 
-function AddStudent({ student, addStudent, teacher }) {
+function AddStudent() {
+
+    const {student,addStudent,teacher}=useContext(Datacontext)
 
     const [name, setName] = useState("")
 
@@ -39,7 +43,7 @@ function AddStudent({ student, addStudent, teacher }) {
                 address: address,
                 teacher: Teacher
             },])
-            
+           
         }
     }
 
