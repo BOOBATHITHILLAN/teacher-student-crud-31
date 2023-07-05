@@ -12,12 +12,7 @@ import Datacontext from "../context/Datacontext";
   const [profession, setProfession] = useState(edittea[0].master);
 
   const [address, setAddress] = useState(edittea[0].address);
-
-  
-
-  
-
- 
+   
 
   function EditTeacher(name, profession, address, id) {
 

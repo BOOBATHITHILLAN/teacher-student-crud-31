@@ -4,7 +4,7 @@ import Datacontext from "../context/Datacontext";
 
 function Dashboard() {
 
-  const{student}=useContext(Datacontext)
+  const{student,teacher}=useContext(Datacontext)
 
   return (
     <div className="container-fluid">
